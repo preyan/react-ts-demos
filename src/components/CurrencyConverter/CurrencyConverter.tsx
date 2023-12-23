@@ -38,7 +38,7 @@ const CurrencyConverter: FC = () => {
   }, [amount, exchangeRate]);
 
   return (
-    <div className="container mx-auto p-10 bg-grey-100 rounded-md shadow-md max-w-sm">
+    <div className="container mx-auto p-10 bg-slate-400 rounded-md shadow-md max-w-sm">
       <h2 className="text-2xl font-semibold mb-6 text-center">
         Currency Converter
       </h2>
