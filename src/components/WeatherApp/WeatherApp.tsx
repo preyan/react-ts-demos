@@ -5,7 +5,7 @@ interface WeatherDetailsProps {
   weatherData?: WeatherData;
 }
 
-const API_BASE_URL = "http://api.openweathermap.org";
+const API_BASE_URL = "https://api.openweathermap.org";
 const API_KEY = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
 
 const getApiUrl = (path: string, params: Record<string, string>) => {
