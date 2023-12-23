@@ -111,17 +111,17 @@ const WeatherApp: FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-blue-100 rounded-md shadow-md">
+    <div className="container mx-auto p-10 bg-blue-100 rounded-md shadow-md max-w-sm">
       <h1 className="text-3xl font-bold mb-4 text-center text-blue-800">
-        Weather App
+        Minimal Weather
       </h1>
 
       <form
         onSubmit={handleSubmit}
         className="flex items-center justify-center mb-4">
-        <label htmlFor="city" className="mr-2 text-blue-800">
+        {/* <label htmlFor="city" className="mr-2 text-blue-800">
           City
-        </label>
+        </label> */}
         <input
           type="text"
           id="city"
@@ -131,7 +131,10 @@ const WeatherApp: FC = () => {
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white ml-2 p-2 rounded-md">
+          className={`ml-2 p-2 rounded-md ${
+            city.trim() === "" ? "bg-gray-500" : "bg-blue-500"
+          } text-white`}
+          disabled={city.trim() === ""}>
           Submit
         </button>
       </form>
