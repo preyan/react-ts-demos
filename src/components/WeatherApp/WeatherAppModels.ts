@@ -72,4 +72,9 @@ interface Wind {
   gust: number;
 }
 
-export type { GeoData, WeatherData };
+interface Country {
+  name: string;
+  iso2: string;
+}
+
+export type { GeoData, WeatherData, Country };
