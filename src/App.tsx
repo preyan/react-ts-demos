@@ -1,4 +1,5 @@
 import CurrencyConverter from "./components/CurrencyConverter/CurrencyConverter";
+import FormValidation from "./components/FormValidation/FormValidation";
 import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 import PasswordStrength from "./components/PasswordStrength/PasswordStrength";
 import WeatherApp from "./components/WeatherApp/WeatherApp";
@@ -20,6 +21,10 @@ function App() {
         <div className="bg-white rounded-lg shadow-md p-4">
           <PasswordStrength />
         </div>
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4"></div>
+      <div className="bg-white rounded-lg shadow-md p-4">
+        <FormValidation />
       </div>
     </div>
   );

@@ -6,9 +6,14 @@ const PasswordStrength: React.FC = () => {
 
   const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
-    setPassword(value);
-    const passwordScore = calculatePasswordStrength(value);
-    setScore(passwordScore);
+    if (value) {
+      setPassword(value);
+      const passwordScore = calculatePasswordStrength(value);
+      setScore(passwordScore);
+    } else {
+      setPassword("");
+      setScore(0);
+    }
   };
 
   const calculatePasswordStrength = (password: string) => {
