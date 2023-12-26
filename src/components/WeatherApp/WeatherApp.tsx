@@ -6,7 +6,7 @@ interface WeatherDetailsProps {
   isUserInputEmpty?: boolean;
 }
 
-const API_BASE_URL = "http://api.openweathermap.org";
+const API_BASE_URL = "https://api.openweathermap.org";
 //api.openweathermap.org/geo/1.0/zip?zip={zip code},{country code}&appid={API key}
 const API_KEY = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
 
